@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+body{
+    font-family: 'Staatliches', cursive; 
+}
+
+.books {
+    margin-top: 100px;
+    
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+table {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.total{
+    font-size: 30px;
+    font-weight: 700;
+}
+.totaly{
+    display: flex;
+    flex-direction: column;
+    font-size: 14.5px;
+    font-weight: 700;
+}
+.totaly span{
+    font-size: 14.5px;
+    font-weight: 400;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(36, 36, 216);
+    position: absolute;
+    top: 2px;
+    right: 9px;
+}
+.navbar-brand {
+    margin-right: 27rem !important;
+   
+}
+.nav-item a{
+    font-size: 20px;
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-item a i {
+    margin-left: 4px;
+    font-size: 20px;
+}
+.carousel-item img {
+    height: 536px !important;
+    width: 100% !important;
+}
+ .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin-right: 16%;
+    margin-bottom: -2rem;
+    margin-left: 17%;
+    list-style: none;
+}
+
+ .carousel-indicators button{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-color: #000000 !important;
+    }
+.carousel-indicators [data-bs-target]{
+        color: #807a7a !important;
+        margin-left: 10px !important;
+        margin-right: 10px!important;
+}
+
+
+.section_top {
+    background: #ffffff;
+  }
+  .sec_top1-2{
+    background-color: #000000;
+  }
+  
+  .tab-pane {
+    background: #000000 !important;
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: #000000 !important;
+    padding: 8px 42px !important
+  }
+  
+  .nav-link {
+    color: #000000 !important;
+  }
+  
+  .nav-pills .nav-link {
+    color: #000000 !important;
+    background-color: #fff !important;
+    border-radius: 9px !important;
+    padding: 8px 42px !important;
+    text-transform: uppercase;
+    font-size: 19px !important;
+  }
+  
+  .section_top #pills-tab {
+    width: 100% !important;
+    background-color: #fff;
+  }
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  color: #fff !important;
+  font-size: 19px !important;
+  }
+  
+  .nav_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center !important;
+  }
+  
+  .nav_div .nav_icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav_div .nav_icon i {
+    background: #ededed;
+    color: #b3b3b3;
+    font-size: 30px;
+    padding: 5px 15px;
+    transition: all 700ms !important;
+    cursor: pointer;
+  }
+  
+  .nav_div .nav_icon i:hover {
+    background-color: #000000;
+  }
+  
+  .fa .fa-angle-left .active {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  .card {
+    height: 523px;
+    text-align: center;
+    text-decoration: none !important;
+    list-style: none !important;
+    margin: 30px 0;
+    border-radius: 10px !important;
+  }
+  
+  .card-body {
+    padding-top: 8px !important;
+    padding-bottom: 0 !important;
+    background-color: ;
+  }
+  .card-content p{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .card-title {
+    font-size: 20px;
+    font-weight: 500;
+    
+    color: #000000 !important;
+    text-transform: uppercase;
+  }
+  
+  .card-text {
+    font-size: 21px;
+    font-weight: 400;
+  }
+  .card-action .btnn{
+    padding: 3px 58px;
+    color: #fff;
+    background: #1f1f1f;
+    border: 3px solid black;
+    border-radius: 26px !important;
+    text-decoration: none;
+    
+  }
+.addproducts{
+    width: 400px;
+    height: 387px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding-top: 40px;
+}
+.df{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.imp{
+  width: 320px;
+}
+.lmp{
+    font-size: 20px;
+    color: #ffffff;
+}
+.isub{
+    margin-top: 20px;
+}
+.dropdown-menu {
+  width: 319px !important;
+  height: 357px !important;
+  background-color: #000 !important;
+}
+.dropdown-menu table{
+  background-color: #fff !important;
+  width: 302px !important;
+}
+
+.dropdown a{
+  font-size: 20px;
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+}

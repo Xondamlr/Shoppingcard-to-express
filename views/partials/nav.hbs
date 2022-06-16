@@ -1,0 +1,81 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img style=" width: 216px;height: 95px;" src="https://www.pngitem.com/pimgs/m/9-95072_online-store-logo-png-transparent-png.png" alt="png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="/api/products">Category</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link"  href="/api/products/add">Add Products<i class="fas fa-plus"></i></a>
+        </li>
+        {{!-- <li class="nav-item relative">
+          <a class="nav-link"  href="/api/card">Shopping card<i class="fas fa-cart-plus"></i><div class="absolut"><span class="summ">{{card.count}}</span></div></a>
+        </li> --}}
+
+        <div class="dropdown ">
+  {{!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button> --}}
+     
+          <a class="nav-link"  href="/api/card" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" >Shopping card<i class="fas fa-cart-plus"></i><div class="absolut"><span class="summ">{{card.count}}</span></div></a>
+       
+      <div class="dropdown-menu" id="card"  aria-labelledby="dropdownMenuButton1">
+    {{#if card.products.length}}
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Count</th>
+                <th>Total price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {{#each card.products}}
+            <tr>
+                <td>{{name}}</td>
+                <td class="price">{{price}}</td>
+                <td class="count">{{count}}</td>
+                <td class="count_price"></td>
+                <td>
+                    <button id="{{id}}" data-id="{{id}}" class="btn remove-btn"
+                        style="background-color: rgb(254, 13, 13) ;">X</button>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+
+        <tr>
+            <td class="total">{{card.price}}</td>
+            <td class="allcount">{{card.count}}</td>
+            
+        </tr>
+    </table>
+    {{else}}
+    <h2 style="color:#fff ; text-align:center;">Card is empty</h2>
+    {{/if}}
+</div>
+
+
+
+  
+</div>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<script src="/scripts/script.js"></script>
